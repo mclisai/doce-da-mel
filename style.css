@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+.font-playfair { font-family: 'Playfair Display', serif; }
+.font-inter { font-family: 'Inter', sans-serif; }
+
+.gradient-bg {
+    background: linear-gradient(135deg, hsla(304, 14%, 42%, 0) 0%, rgba(197, 28, 197, 0) 50%, lch(1.37% 0 296.81 / 0) 100%);
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px hsl(0, 0%, 100%);
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: hwb(140 0% 31%);
+    color: hsl(0, 0%, 0%);
+    border-radius: 50px;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px lch(0% 0 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px hwb(0 100% 0%);
+}
+
+.order-btn {
+    transition: all 0.3s ease;
+}
+.order-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px hsl(0, 0%, 100%);
+}
+
+.quantity-btn {
+    transition: all 0.2s ease;
+}
+.quantity-btn:hover {
+    background-color: hsl(143, 100%, 36%);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: hsl(0, 0%, 100%);
+    border-radius: 16px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+select {
+    background-color: #ff3d7f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    background-color: #e63673;
+}
+
+select:focus {
+    background-color: #e63673;
+    box-shadow: 0 0 10px rgba(255, 61, 127, 0.6);
+}

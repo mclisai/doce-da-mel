@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces Gourmet - Sabores Únicos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+</head>
+<body class="font-inter bg-orange-50">
+
+    <!-- Header -->
+    <header class="gradient-bg text-black py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="font-playfair text-5xl md:text-6xl font-bold mb-4">🍫 Doces Gourmet</h1>
+            <p class="text-xl md:text-2xl font-size opacity-90">Sabores únicos que despertam seus sentidos</p>
+            <div class="mt-8">
+                <span class="inline-block bg-white bg-opacity-20 px-6 py-2 rounded-full text-lg">
+                    ✨Feitos com amor e ingredientes premium.
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Produtos -->
+    <section class="py-20 animated-bg text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Nossos Doces Especiais
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Cada doce é uma obra de arte culinária, preparada com ingredientes selecionados e muito carinho
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <!-- Card 1 -->
+<div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+    <div class="h-64 bg-gray-100 overflow-hidden">
+        <img src="https://www.academiaassai.com.br/sites/default/files/trufas_capa.jpg" alt="Trufas Gourmet" class="w-full h-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="font-playfair text-2xl font-bold text-gray-800 mb-3">Trufas Gourmet</h3>
+        <p class="text-gray-600 mb-4 leading-relaxed">
+            Deliciosas trufas artesanais com chocolate belga premium. Disponíveis nos sabores: Ninho com uva verde, maracujá, beijinho, brigadeiro e ninho com morango.
+        </p>
+        <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl font-bold text-orange-600">R$ 7,00</span>
+            <span class="text-sm text-gray-500">Por unidade</span>
+        </div>
+        <div class="mb-4 flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs">Chocolate Belga</span>
+            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs">Artesanal</span>
+        </div>
+        <div style="display: flex; gap: 10px; align-items: center;">
+    <select id="sabores-trufas" name="sabores-trufas" class="border border-gray-300 rounded-lg p-2">
+        <option value="ninho-uva-verde">Ninho com Uva Verde</option>
+        <option value="maracuja">Maracujá</option>
+        <option value="beijinho">Beijinho</option>
+        <option value="brigadeiro">Brigadeiro</option>
+        <option value="ninho-morango">Ninho com Morango</option>
+    </select>
+
+    <button onclick="openOrderModal('Trufas Gourmet - ' + document.getElementById('sabores-trufas').value, 7.00)" 
+        class="order-btn w-full bg-gradient-to-r from-pink-500 to-rose-500 text-white py-3 px-6 rounded-lg font-semibold hover:from-pink-600 hover:to-rose-600">
+        🛒 Fazer Pedido
+    </button>
+</div>
+    </div> <!-- FECHA div .p-6 -->
+</div> <!-- FECHA div do card Trufas Gourmet -->
+
+<!-- Card 2 -->
+<div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+    <div class="h-64 bg-gray-100 overflow-hidden">
+        <img src="https://s2.glbimg.com/iHxzyJQPMvJFl-a4xHx9As7VPJ4=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/Z/I/CKOjKFTDWHghhvRc7uoA/palha-italiana-receita.jpg" alt="Palha Italiana" class="w-full h-full object-cover">
+    </div>
+    <div class="p-6">
+        <h3 class="font-playfair text-2xl font-bold text-gray-800 mb-3">Palha Italiana</h3>
+        <p class="text-gray-600 mb-4 leading-relaxed">Deliciosa palha italiana de brigadeiro com bolacha crocante, banhada no leite ninho. Uma combinação irresistível de texturas e sabores.</p>
+        <div class="flex items-center justify-between mb-4">
+            <span class="text-2xl font-bold text-orange-600">R$ 7,50</span>
+            <span class="text-sm text-gray-500">Por unidade</span>
+        </div>
+        <div class="mb-4 flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs">Leite Ninho</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs">Crocante</span>
+        </div>
+        <button onclick="openOrderModal('Palha Italiana', 7.50)" class="order-btn w-full bg-gradient-to-r from-pink-500 to-rose-500 text-white py-3 px-6 rounded-lg font-semibold hover:from-pink-600 hover:to-rose-600">
+            🛒 Fazer Pedido
+        </button>
+    </div>
+</div>
+
+                <!-- Morango Amor -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                    <div class="h-64 bg-gray-100 overflow-hidden">
+                        <img src="https://tramp.com.br/wp-content/uploads/2025/08/Partager_Morango-do-Amor_2.jpg" alt="Morango Amor" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-2xl font-bold text-gray-800 mb-3">Morango Amor</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Morangos frescos envolvidos no brigadeiro de ninho cremoso e banhados na calda de caramelo vermelha. Uma explosão de sabor e amor.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-orange-600">R$ 18,00</span>
+                            <span class="text-sm text-gray-500">Por unidade</span>
+                        </div>
+                        <div class="mb-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs">Morango Fresco</span>
+                            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs">Caramelo</span>
+                        </div>
+                        <button onclick="openOrderModal('Morango Amor', 18.00)" class="order-btn w-full bg-gradient-to-r from-pink-500 to-rose-500 text-white py-3 px-6 rounded-lg font-semibold hover:from-pink-600 hover:to-rose-600">
+                            🛒 Fazer Pedido
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="py-20 bg-">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-gray-800 mb-8">Entre em Contato</h2>
+                <p class="text-xl text-gray-600 mb-8">Faça seu pedido pelo WhatsApp e receba seus doces fresquinhos! Também fazemos encomendas especiais para festas.</p>
+                
+                <div class="bg-gradient-to-r from-green-500 to-green-600 text-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="text-2xl font-bold mb-2">WhatsApp</h3>
+                    <p class="text-green-100 mb-4">Atendimento personalizado de segunda a sábado por ordem de pedidos.</p>
+                    <a href="https://wa.me/5514996149176" class="inline-block bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        💬 Chamar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-black py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="font-playfair text-3xl font-bold mb-4">🍫Doces Gourmet</h3>
+            <p class="text-align opacity-90 mb-6">Transformando momentos especiais em memórias doces!</p>
+            <p class="opacity-75">© 2024 Doces Gourmet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a href="https://wa.me/5514996149176" class="whatsapp-float" title="Chamar no WhatsApp">💬</a>
+
+    <!-- Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content fade-in">
+            <div class="p-6 border-b border-gray-200">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-playfair text-2xl font-bold text-gray-800" id="modalTitle">Fazer Pedido</h3>
+                    <button onclick="closeOrderModal()" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+            </div>
+            
+            <div class="p-6">
+                <h4 class="font-semibold text-gray-800 mb-2" id="productName">Produto</h4>
+                <p class="text-gray-600 mb-4">Escolha a quantidade desejada:</p>
+                <div class="flex items-center justify-center space-x-4 mb-6">
+                    <button onclick="decreaseQuantity()" class="quantity-btn bg-pink-500 text-white w-10 h-10 rounded-full">-</button>
+                    <span class="text-2xl font-bold text-gray-800 min-w-[3rem] text-center" id="quantity">1</span>
+                    <button onclick="increaseQuantity()" class="quantity-btn bg-pink-500 text-white w-10 h-10 rounded-full">+</button>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg mb-6">
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-600">Preço unitário:</span>
+                        <span class="font-semibold" id="unitPrice">R$ 0,00</span>
+                    </div>
+                    <div class="flex justify-between items-center mt-2 pt-2 border-t border-gray-200">
+                        <span class="text-lg font-bold text-gray-800">Total:</span>
+                        <span class="text-lg font-bold text-orange-600" id="totalPrice">R$ 0,00</span>
+                    </div>
+                </div>
+                <label class="block text-gray-700 font-semibold mb-2">Observações (opcional):</label>
+                <textarea id="orderNotes" class="w-full p-3 border border-gray-300 rounded-lg resize-none" rows="3" placeholder="Alguma observação especial?"></textarea>
+                <button onclick="sendWhatsAppOrder()" class="w-full bg-green-500 text-white py-3 px-6 rounded-lg font-semibold">
+                    📱 Enviar Pedido pelo WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
